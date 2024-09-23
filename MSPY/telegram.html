@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telegram Chat</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding: 20px;
+      background-color: #e5ddd5;
+    }
+    .chat-list {
+      max-height: 400px;
+      overflow-y: auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+    }
+    .chat-item {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .chat-item:last-child {
+      border-bottom: none;
+    }
+    .chat-item:hover {
+      background-color: #f1f1f1;
+    }
+    .chat-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .reply {
+      margin-left: 40px;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="text-center">Telegram Chats</h1>
+
+  <div class="container">
+    <div class="chat-list">
+      <!-- Chat Item 1 -->
+      <div class="chat-item">
+        <img src="https://via.placeholder.com/30" alt="User" class="chat-icon"> <strong>Mike</strong>: Just sent you the files!
+        <div class="reply">
+          <img src="https://via.placeholder.com/30" alt="User" class="chat-icon"> <strong>You</strong>: Thanks, I’ll check them out.
+        </div>
+      </div>
+      
+      <!-- Chat Item 2 -->
+      <div class="chat-item">
+        <img src="https://via.placeholder.com/30" alt="User" class="chat-icon"> <strong>Lisa</strong>: Let’s catch up soon!
+        <div class="reply">
+          <img src="https://via.placeholder.com/30" alt="User" class="chat-icon"> <strong>You</strong>: Sure, I'm free next week.
+        </div>
+      </div>
+
+      <!-- Chat Item 3 -->
+      <div class="chat-item">
+        <img src="https://via.placeholder.com/30" alt="User" class="chat-icon"> <strong>Tom</strong>: Can you review my code?
+        <div class="reply">
+          <img src="https://via.placeholder.com/30" alt="User" class="chat-icon"> <strong>You</strong>: I'll take a look tonight.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

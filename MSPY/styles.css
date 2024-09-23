@@ -1,0 +1,418 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0; /* Reduced padding */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: left; /* Align text to the left */
+    padding: 100px 20px; /* Increased padding for better spacing */
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    position: relative; /* For layering */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for better text readability */
+    z-index: 1; /* Layer the overlay behind the text */
+}
+
+.hero .container {
+    position: relative; /* To position content above the overlay */
+    z-index: 2; /* Layer the text above the overlay */
+}
+
+.hero h2 {
+    font-size: 2.5rem; /* Larger font size for the main title */
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    font-size: 1.5rem; /* Subheading size */
+    margin-bottom: 20px;
+    color: #f44336; /* Accent color for emphasis */
+}
+
+.hero p {
+    margin-bottom: 20px; /* Add spacing below the paragraph */
+    font-size: 1.2rem; /* Slightly larger font size for better readability */
+}
+
+.cta {
+    background: #4CAF50; /* Green color */
+    padding: 12px 20px; /* Adjusted padding for a more noticeable size */
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem; /* Slightly larger font size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cta:hover {
+    background: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.demo {
+    margin-top: 10px;
+    text-decoration: underline;
+    color: #4CAF50; /* Change demo link color to green */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.demo:hover {
+    color: #388E3C; /* Darker green on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #f1f1f1;
+}
+
+#get-started {
+    background-color: #f8f9fa; /* Light background */
+}
+
+#get-started .step {
+    padding: 20px;
+    margin-bottom: 30px; /* Space between each step */
+}
+
+#get-started .step-number {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 20px; /* Center the step number */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#get-started h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#get-started p {
+    font-size: 1rem;
+    color: #666;
+}
+
+#get-started .btn {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+}
+
+.highlighted-heading {
+    color: orange;
+    font-size: 2rem; /* Adjust the size as needed */
+    text-align: center;
+}
+#get-started .step {
+    padding: 20px;
+    margin-bottom: 30px; /* Space between each step */
+}
+
+#get-started .step-number {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 20px; /* Center the step number */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#get-started h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#get-started p {
+    font-size: 1rem;
+    color: #666;
+}
+
+#get-started .btn {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+}
+
+#why-choose-mspy {
+    background-color: #141212; /* Light grey background for the section */
+}
+
+.feature-box {
+    background-color: #0a0909; /* White background for the boxes */
+    transition: transform 0.2s;
+}
+
+.feature-box:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+#why-choose-mspy h2 {
+    font-size: 2.5rem;
+}
+
+#why-choose-mspy h4 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#why-choose-mspy p {
+    font-size: 1rem;
+    color: #666;
+}
+
+#dozens-of-features {
+    background-color: #f0f0f0; /* Light grey background for the section */
+}
+
+.features-list {
+    list-style-type: none; /* Remove bullets from list */
+    padding: 0;
+}
+
+.features-list li {
+    background-color: #ffffff; /* White background for each feature */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.features-list li:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+#dozens-of-features h2 {
+    font-size: 2.5rem;
+}
+
+#dozens-of-features h3 {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+#dozens-of-features h4 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#dozens-of-features p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center; /* Center icon and text vertically */
+}
+
+.features-list i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #007bff; /* Change the icon color */
+    font-size: 1.2rem; /* Adjust icon size */
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Space items evenly */
+    background-color: #f8f8f8; /* Grey background */
+    padding: 20px; /* Padding around the container */
+}
+
+.feature-box {
+    background-color: white; /* Box background */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    padding: 15px; /* Padding inside the box */
+    margin: 10px; /* Margin around each box */
+    flex: 1 1 calc(30% - 20px); /* Flex property to adjust size */
+    display: flex; /* Flex display for icon and text */
+    align-items: center; /* Center icon and text vertically */
+    transition: transform 0.3s; /* Smooth transition effect */
+}
+
+.feature-box:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.feature-box i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #007bff; /* Icon color */
+    font-size: 1.5rem; /* Icon size */
+}
+
+.feature-box {
+    background-color: white; /* Box background */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    padding: 20px; /* Padding inside the box */
+    transition: transform 0.3s; /* Smooth transition effect */
+}
+
+.feature-box:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.feature-box {
+    display: flex; /* Align items horizontally */
+    flex-wrap: wrap; /* Allow wrapping */
+    border: 1px solid #ddd; /* Border for the box */
+    padding: 15px; /* Padding inside the box */
+    background-color: #f9f9f9; /* Light grey background */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.feature-item {
+    display: flex; /* Align icon and text */
+    align-items: center; /* Center vertically */
+    margin-right: 15px; /* Space between items */
+}
+
+.feature-item i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.feature-item:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.btn-link {
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+}
+
+.btn-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Sidebar styling */
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+}
+
+.sidebar .nav-link {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #555;
+}
+
+.main-content {
+    margin-left: 220px; /* Adjust based on the sidebar width */
+}
+
+.main-content h2 {
+    margin-bottom: 20px;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+/* Main Content Styling */
+.main-content h2 {
+    margin-bottom: 20px;
+}
+
+/* Card styling for the form */
+.card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Icon within labels */
+form label i {
+    margin-right: 5px;
+}
+
+/* Form group spacing */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Input group styling */
+.input-group-prepend .input-group-text {
+    background-color: #ddd;
+}
+
+form button {
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+form button i {
+    margin-right: 5px;
+}

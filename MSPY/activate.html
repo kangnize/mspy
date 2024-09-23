@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activate Account</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5">Activate Your Account</h2>
+        <div class="card mt-4 p-4">
+            <h4 class="mb-3">Enter Transaction Details</h4>
+            <form id="activateForm">
+                <div class="form-group">
+                    <label for="transactionHash">Transaction Hash/ID:</label>
+                    <input type="text" class="form-control" id="transactionHash" placeholder="Enter Transaction Hash/ID" required>
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">User Email:</label>
+                    <input type="email" class="form-control" id="userEmail" placeholder="Enter Your Email" required>
+                </div>
+                <!-- Submit Button -->
+                <button type="button" class="btn btn-primary" onclick="submitActivation()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript to Handle Activation Form Submission -->
+    <script>
+        function submitActivation() {
+            const transactionHash = document.getElementById('transactionHash').value;
+            const userEmail = document.getElementById('userEmail').value;
+
+            if (transactionHash && userEmail) {
+                alert(`Account Activation Submitted!\nTransaction Hash/ID: ${transactionHash}\nUser Email: ${userEmail}`);
+                // You can add code to handle the activation request here.
+                document.getElementById('activateForm').reset();
+            } else {
+                alert('Please fill in all fields.');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Chat</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding: 20px;
+      background-color: #e5ddd5;
+    }
+    .chat-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .chat-list {
+      max-height: 500px;
+      overflow-y: auto;
+      padding: 10px;
+    }
+    .chat-item {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: flex-start;
+    }
+    .chat-item:last-child {
+      border-bottom: none;
+    }
+    .chat-item:hover {
+      background-color: #f1f1f1;
+    }
+    .chat-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    .chat-content {
+      max-width: 80%;
+      background-color: #dcf8c6;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .reply {
+      margin-left: 60px;
+      max-width: 75%;
+      background-color: #ffffff;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    .chat-time {
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="text-center mb-4">WhatsApp Chat</h1>
+
+  <div class="chat-container">
+    <div class="chat-list">
+      <!-- Chat Item 1 -->
+      <div class="chat-item">
+        <img src="https://via.placeholder.com/40" alt="User" class="chat-icon">
+        <div>
+          <div class="chat-content">
+            <strong>John Doe</strong><br>
+            Hey, are we meeting tomorrow?<br>
+            <span class="chat-time">10:30 AM</span>
+          </div>
+          <div class="reply">
+            <strong>You</strong><br>
+            Yes, I’ll see you at 3 PM.<br>
+            <span class="chat-time">10:35 AM</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Chat Item 2 -->
+      <div class="chat-item">
+        <img src="https://via.placeholder.com/40" alt="User" class="chat-icon">
+        <div>
+          <div class="chat-content">
+            <strong>Jane Smith</strong><br>
+            Don’t forget to bring the files!<br>
+            <span class="chat-time">11:00 AM</span>
+          </div>
+          <div class="reply">
+            <strong>You</strong><br>
+            Sure, I have them ready.<br>
+            <span class="chat-time">11:05 AM</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Item 3 -->
+      <div class="chat-item">
+        <img src="https://via.placeholder.com/40" alt="User" class="chat-icon">
+        <div>
+          <div class="chat-content">
+            <strong>Alex</strong><br>
+            Are you coming to the event later?<br>
+            <span class="chat-time">12:00 PM</span>
+          </div>
+          <div class="reply">
+            <strong>You</strong><br>
+            I’m on my way, should be there by 2 PM.<br>
+            <span class="chat-time">12:15 PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

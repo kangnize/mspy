@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .note {
+                background-color: #f8f9fa;
+                padding: 20px;
+                margin-bottom: 20px;
+                border-left: 5px solid #007bff;
+            }
+        </style>
+    </head>    
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-dark text-white sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" id="generateRedSpy">
+                                <i class="fas fa-file-alt"></i> Generate RedSpy
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" id="connectedDevices">
+                                <i class="fas fa-plug"></i> Connected Devices
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" id="disconnectDevice">
+                                <i class="fas fa-unlink"></i> Disconnect A Device
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="payment.html">
+                                <i class="fas fa-key"></i> Activate Account
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#profileSettings">
+                                <i class="fas fa-cog"></i> Profile Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+                    <h2>Welcome to Your Dashboard, Master Wong</h2>
+                </div>
+                
+                <!-- Summary Note -->
+                <div class="note">
+                    <h4>Important Notice</h4>
+                    <p>Please activate your account to access all features of RedSpy. Ensure that you have completed the payment process to unlock all tools and settings.</p>
+                </div>
+
+                <!-- Content for Navigation Items -->
+                <div id="content">
+                    <!-- This section will display when clicking links from the sidebar -->
+                </div>
+
+                <!-- Profile Settings Section -->
+                <div id="profileSettings" class="card p-4 shadow-sm">
+                    <h3>Profile Settings</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="firstName">
+                                <i class="fas fa-user"></i> First Name
+                            </label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" id="firstName" value="Master">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">
+                                <i class="fas fa-user-tag"></i> Last Name
+                            </label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-user-tag"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" id="lastName" value="Wong">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location">
+                                <i class="fas fa-map-marker-alt"></i> Location
+                            </label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" id="location" value="Hong Kong">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phoneNumber">
+                                <i class="fas fa-phone"></i> Phone Number
+                            </label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-phone"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" id="phoneNumber" value="+852 1234 5678">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save"></i> Save Changes
+                        </button>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Event handlers for showing alerts for restricted features
+        document.getElementById("generateRedSpy").addEventListener("click", function() {
+            alert("Activate Your Account To Access");
+        });
+
+        document.getElementById("connectedDevices").addEventListener("click", function() {
+            alert("Activate Your Account To Access");
+        });
+
+        document.getElementById("disconnectDevice").addEventListener("click", function() {
+            alert("Activate Your Account To Access");
+        });
+    </script>
+</body>
+</html>

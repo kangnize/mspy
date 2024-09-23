@@ -1,0 +1,73 @@
+/* login.css */
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container styles */
+.register-container, .login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styles */
+.cta {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cta:hover {
+    background: #0056b3;
+}
+
+/* Prompt styles */
+.login-prompt, .register-prompt {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-prompt a, .register-prompt a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-prompt a:hover, .register-prompt a:hover {
+    text-decoration: underline;
+}

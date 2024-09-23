@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f1f1f1; /* Light background color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; /* Padding for header container */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0; /* Reduced padding */
+}
+
+.login-container {
+    max-width: 400px; /* Limit width */
+    margin: 100px auto; /* Centering */
+    padding: 20px;
+    background: #fff; /* White background for the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Space below title */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Full width input */
+    padding: 10px; /* Padding inside input */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.cta {
+    background: #4CAF50; /* Green button */
+    padding: 12px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem; /* Button font size */
+    width: 100%; /* Full width button */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease; /* Smooth transition for hover */
+}
+
+.cta:hover {
+    background: #45a049; /* Darker green on hover */
+}
+
+.forgot-password,
+.link {
+    text-align: center; /* Center the link text */
+    margin-top: 15px; /* Space above the links */
+}
+
+.forgot-password a,
+.link a {
+    color: #4CAF50; /* Green color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.forgot-password a:hover,
+.link a:hover {
+    color: #388E3C; /* Darker green on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #f1f1f1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0; /* Reduced padding */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: left; /* Align text to the left */
+    padding: 50px 20px;
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    position: relative; /* For layering */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    z-index: 1; /* Layer the overlay behind the text */
+}
+
+.hero-content {
+    position: relative; /* To position content above the overlay */
+    z-index: 2; /* Layer the text above the overlay */
+    max-width: 600px; /* Limit the width for better readability */
+}
+
+.hero h2 {
+    font-size: 2.5rem; /* Larger font size for the main title */
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    font-size: 1.5rem; /* Subheading size */
+    margin-bottom: 20px;
+    color: #f44336; /* Accent color for emphasis */
+}
+
+.hero p {
+    margin-bottom: 20px; /* Add spacing below the paragraph */
+    font-size: 1.1rem; /* Slightly larger font size for better readability */
+}
+
+.cta {
+    background: #4CAF50; /* Green color */
+    padding: 12px 20px; /* Adjusted padding for a more noticeable size */
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem; /* Slightly larger font size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cta:hover {
+    background: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.demo {
+    margin-top: 10px;
+    text-decoration: underline;
+    color: #4CAF50; /* Change demo link color to green */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.demo:hover {
+    color: #388E3C; /* Darker green on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #f1f1f1;
+}
